@@ -1,0 +1,16 @@
+# GET http://localhost:4004/odata/v4/product-shope/Product
+
+
+
+# GET http://localhost:4004/odata/v4/product-shope/Supplier
+
+POST http://localhost:4004/odata/v4/product-shope/Product
+Content-Type: application/json
+
+    {
+      "ID": 22,
+      "name": "Cayenne",
+      "brand": "Porsche",
+      "price": 8934534999,
+      "category": "SUV"
+    }
