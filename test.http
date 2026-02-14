@@ -19,4 +19,9 @@
 
 
 # GET http://localhost:4004/odata/v4/product-shope/Supplier?$expand=products
-GET http://localhost:4004/odata/v4/product-shope/myFunc(name='Simranjit')
+# GET http://localhost:4004/odata/v4/product-shope/myFunc(name='Simranjit')
+POST http://localhost:4004/odata/v4/product-shope/myAction
+Content-Type: application/json
+{
+  "name":"Simranjit"
+}

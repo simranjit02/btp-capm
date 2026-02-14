@@ -7,4 +7,6 @@ service productShope
     entity Supplier as
         projection on my.Supplier;
     function myFunc(name:String) returns String;
+    Action myAction(name:String) returns String;
+
 }
