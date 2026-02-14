@@ -1,21 +1,21 @@
-ID,name,brand,price,category
-1,M5,BMW,99999,Sports
-2,X5,BMW,75999,SUV
-3,A4,Audi,45999,Sedan
-4,A6,Audi,55999,Sedan
-5,Q7,Audi,69999,SUV
-6,C200,Mercedes,47999,Sedan
-7,E300,Mercedes,58999,Sedan
-8,GLE,Mercedes,72999,SUV
-9,Model S,Tesla,89999,Electric
-10,Model 3,Tesla,44999,Electric
-11,Mustang,Ford,55999,Sports
-12,F-150,Ford,48999,Truck
-13,Civic,Honda,27999,Sedan
-14,Accord,Honda,32999,Sedan
-15,CR-V,Honda,34999,SUV
-16,Corolla,Toyota,25999,Sedan
-17,Camry,Toyota,30999,Sedan
-18,RAV4,Toyota,36999,SUV
-19,911,Porsche,119999,Sports
-20,Cayenne,Porsche,89999,SUV
+ID,name,brand,price,category,supplier_ID
+1,M5,BMW,99999,Sports,1
+2,X5,BMW,75999,SUV,2
+3,A4,Audi,45999,Sedan,2
+4,A6,Audi,55999,Sedan,3
+5,Q7,Audi,69999,SUV,4
+6,C200,Mercedes,47999,Sedan,4
+7,E300,Mercedes,58999,Sedan,5
+8,GLE,Mercedes,72999,SUV,6
+9,Model S,Tesla,89999,Electric,7
+10,Model 3,Tesla,44999,Electric,8
+11,Mustang,Ford,55999,Sports,5
+12,F-150,Ford,48999,Truck,3
+13,Civic,Honda,27999,Sedan,5
+14,Accord,Honda,32999,Sedan,2
+15,CR-V,Honda,34999,SUV,1
+16,Corolla,Toyota,25999,Sedan,3
+17,Camry,Toyota,30999,Sedan,4
+18,RAV4,Toyota,36999,SUV,5
+19,911,Porsche,119999,Sports,6
+20,Cayenne,Porsche,89999,SUV,7
