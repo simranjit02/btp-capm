@@ -18,4 +18,5 @@
 #  GET http://localhost:4004/odata/v4/product-shope/Product?$expand=supplier
 
 
-GET http://localhost:4004/odata/v4/product-shope/Supplier?$expand=products
+# GET http://localhost:4004/odata/v4/product-shope/Supplier?$expand=products
+GET http://localhost:4004/odata/v4/product-shope/myFunc(name='Simranjit')
