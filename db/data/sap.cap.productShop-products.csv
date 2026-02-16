@@ -1,21 +1,21 @@
 ID,name,brand,price,category,supplier_ID
-1,M5,BMW,99999,Sports,1
-2,X5,BMW,75999,SUV,2
-3,A4,Audi,45999,Sedan,2
-4,A6,Audi,55999,Sedan,3
-5,Q7,Audi,69999,SUV,4
-6,C200,Mercedes,47999,Sedan,4
-7,E300,Mercedes,58999,Sedan,5
-8,GLE,Mercedes,72999,SUV,6
-9,Model S,Tesla,89999,Electric,7
-10,Model 3,Tesla,44999,Electric,8
-11,Mustang,Ford,55999,Sports,5
-12,F-150,Ford,48999,Truck,3
-13,Civic,Honda,27999,Sedan,5
-14,Accord,Honda,32999,Sedan,2
-15,CR-V,Honda,34999,SUV,1
-16,Corolla,Toyota,25999,Sedan,3
-17,Camry,Toyota,30999,Sedan,4
-18,RAV4,Toyota,36999,SUV,5
-19,911,Porsche,119999,Sports,6
-20,Cayenne,Porsche,89999,SUV,7
+4b99b149-4e19-467a-9527-20367da34e2d,M5,BMW,99999,Sports,1
+42c8a619-06a2-47f1-9127-2c854557d455,X5,BMW,75999,SUV,2
+b0a8dcce-6360-4693-ae37-03ab09dc9df7,A4,Audi,45999,Sedan,2
+f1e59dcf-325a-41ca-b8ec-037adfc36ce9,A6,Audi,55999,Sedan,3
+479cf07c-6bd5-440a-bed1-7797c147547e,Q7,Audi,69999,SUV,4
+afced192-818f-401f-b302-517ea70f28d1,C200,Mercedes,47999,Sedan,4
+e5adbdef-2511-4e4e-89af-3c94add23faf,E300,Mercedes,58999,Sedan,5
+8594e25c-ca42-4026-9af6-a2aa32642dc7,GLE,Mercedes,72999,SUV,6
+c9c073d4-5b42-4fe7-a75f-6e0c6af39480,Model S,Tesla,89999,Electric,7
+06a4c0d9-6f2a-4720-a072-4331081e137b,Model 3,Tesla,44999,Electric,8
+90d79370-d119-4878-9fcc-29438638d373,Mustang,Ford,55999,Sports,5
+2e54522e-f1e5-4e8d-8e62-e3699f380f28,F-150,Ford,48999,Truck,3
+ea9c36d3-8a98-488c-8ff9-cb0c7580b665,Civic,Honda,27999,Sedan,5
+3b028b42-a166-4af5-882d-368fd493da1e,Accord,Honda,32999,Sedan,2
+573c4321-f3f6-4b79-a070-c8642984eac7,CR-V,Honda,34999,SUV,1
+59ce3f34-ea7b-4c95-b1a3-f45f2dac0e73,Corolla,Toyota,25999,Sedan,3
+d93ac917-e2f0-4aba-a65b-9ef495c3eb1d,Camry,Toyota,30999,Sedan,4
+ddc56b4e-6623-4b2c-bfa1-8438264286cd,RAV4,Toyota,36999,SUV,5
+e5a5c215-5884-4f83-a243-4529c0d72fcd,911,Porsche,119999,Sports,6
+73352673-a355-4095-babd-61c0f6f6d283,Cayenne,Porsche,89999,SUV,7

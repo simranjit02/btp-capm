@@ -22,6 +22,7 @@
 # GET http://localhost:4004/odata/v4/product-shope/myFunc(name='Simranjit')
 POST http://localhost:4004/odata/v4/product-shope/myAction
 Content-Type: application/json
+
 {
   "name":"Simranjit"
 }
