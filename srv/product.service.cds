@@ -36,3 +36,4 @@ service productShope
     returns String;
 }
 // annotate productShope with @(requires: 'productManager')
+
