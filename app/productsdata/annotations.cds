@@ -37,6 +37,12 @@ annotate service.Product with @(
             Label : 'General Information',
             Target : '@UI.FieldGroup#GeneratedGroup',
         },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Label : 'Supplier info',
+            ID : 'Supplierinfo',
+            Target : '@UI.FieldGroup#Supplierinfo',
+        },
     ],
     UI.LineItem : [
         {
@@ -103,8 +109,42 @@ annotate service.Product with @(
             $Type : 'UI.DataField',
             Value : supplier.name,
         },
+        TypeImageUrl : 'sap-icon://car-rental',
     },
-);
+    UI.FieldGroup #Supplierinfo : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataField',
+                Value : supplier.ID,
+                Label : 'ID',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : supplier.name,
+                Label : 'name',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : supplier.phone,
+                Label : 'phone',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : supplier.city,
+                Label : 'city',
+            },
+        ],
+    },
+    UI.Identification : [
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action : 'productShope.fingerprint',
+            Label : 'fingerprint',
+            Determining : true,
+        },
+    ],
+    );
 
 annotate service.Product with {
     name @Common.Label : 'name'

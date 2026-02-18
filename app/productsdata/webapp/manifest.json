@@ -127,7 +127,16 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Product"
+              "contextPath": "/Product",
+              "content": {
+                "footer": {
+                  "actions": {
+                    "DataFieldForAction::productShope.fingerprint": {
+                      "priority": "High"
+                    }
+                  }
+                }
+              }
             }
           }
         }
