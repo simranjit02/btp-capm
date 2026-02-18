@@ -154,3 +154,28 @@ annotate service.Product with {
     category @Common.Label : 'category'
 };
 
+annotate service.Supplier with {
+    name @(
+        Common.ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'Supplier',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : name,
+                    ValueListProperty : 'name',
+                },
+                {
+                    $Type : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty : 'city',
+                },
+                {
+                    $Type : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty : 'phone',
+                },
+            ],
+        },
+        Common.ValueListWithFixedValues : false,
+        Common.Text : city,
+)};
+

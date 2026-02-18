@@ -1,2 +1,2 @@
 
-using from './productsdata/annotations';
+using from './productsdata/annotations'
