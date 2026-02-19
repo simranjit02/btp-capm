@@ -23,10 +23,7 @@ const {Product} =srv.entities
     return data
   })  
   srv.before('orderPO', async(req)=>{
-   console.log("wow",req.data)
-   console.log("params",req.params)
    const record = await SELECT `stock` .from(Product).where({ID:req.params[0].ID})
-   console.log("record",record)
    if (record[0].stock > 500){
     return req.error({
       code: 500,
