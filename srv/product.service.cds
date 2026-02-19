@@ -5,8 +5,6 @@ service productShope {
     entity Product  as projection on my.products
         actions {
             action orderPO(
-                           @title: 'Name'
-                           name: String,
                            @title: 'Stock'
                            stock: Integer);
             action orderProduct(
