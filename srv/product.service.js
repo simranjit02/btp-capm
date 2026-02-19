@@ -4,6 +4,7 @@ const { SELECT } = require('@sap/cds/lib/ql/cds-ql');
 
 module.exports = cds.service.impl( async function(srv){
 const {Product} =srv.entities
+let currentStock
   // serv.on('READ','Product', async(req)=>{
   //   console.log("on")
   // })
@@ -24,6 +25,7 @@ const {Product} =srv.entities
   })  
   srv.before('orderPO', async(req)=>{
    const record = await SELECT `stock` .from(Product).where({ID:req.params[0].ID})
+   currentStock = record[0].stock
    if (record[0].stock > 500){
     return req.error({
       code: 500,
@@ -31,7 +33,13 @@ const {Product} =srv.entities
     })
    }
   })
-  srv.on('orderPO', async(req)=>{})
+  srv.on('orderPO', async(req)=>{
+    const productId = req.params[0].ID
+    updatedStock = currentStock + req.data.stock
+    const setStock = await UPDATE(Product).set({stock:updatedStock}).where({
+      ID:productId
+    })
+    console.log("setStock",setStock)
+    return req.notify("balle balle")
+  })
 });
-
-
