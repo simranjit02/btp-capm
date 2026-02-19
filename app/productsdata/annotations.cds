@@ -52,6 +52,19 @@ annotate service.Product with @(
             @UI.Importance : #High,
         },
         {
+            $Type : 'UI.DataFieldForAction',
+            Action : 'productShope.orderPO',
+            Label : 'Order Product',
+            Inline : true,
+            Criticality : #Positive,
+            @UI.Importance : #High,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : stock,
+            Label : 'stock',
+        },
+        {
             $Type : 'UI.DataField',
             Value : brand,
             Label : '{i18n>Brand}',
@@ -77,14 +90,6 @@ annotate service.Product with @(
             Label : 'price',
             Criticality : price,
             CriticalityRepresentation : #WithIcon,
-        },
-        {
-            $Type : 'UI.DataFieldForAction',
-            Action : 'productShope.orderPO',
-            Label : 'Order Product',
-            Inline : true,
-            Criticality : #Positive,
-            @UI.Importance : #High,
         },
         {
             $Type : 'UI.DataFieldForAction',

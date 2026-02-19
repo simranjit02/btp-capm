@@ -1,39 +1,27 @@
-using { sap.cap.productShop as my } from '../db/schema';
+using {sap.cap.productShop as my} from '../db/schema';
 
-service productShope
-{
+service productShope {
     @odata.draft.enabled
-    entity Product as
-        projection on my.products
-        actions
-        {
-            action orderPO
-            (
-                @title : 'Name'
-                name : String,
-                @title : 'Stock'
-                stock : Integer
-            );
+    entity Product  as projection on my.products
+        actions {
+            action orderPO(
+                           @title: 'Name'
+                           name: String,
+                           @title: 'Stock'
+                           stock: Integer);
+            action orderProduct(
+                                @title: 'Name'
+                                name: String,
+                                @title: 'Stock'
+                                stock: Integer);
 
-            action fingerprint
-            (
-            );
+            action fingerprint();
         };
 
-    entity Supplier as
-        projection on my.Supplier;
+    entity Supplier as projection on my.Supplier;
 
-    function myFunc
-    (
-        name : String
-    )
-    returns String;
+    function myFunc(name: String)   returns String;
 
-    action myAction
-    (
-        name : String
-    )
-    returns String;
+    action   myAction(name: String) returns String;
 }
 // annotate productShope with @(requires: 'productManager')
-
