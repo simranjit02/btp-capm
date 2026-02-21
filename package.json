@@ -12,8 +12,8 @@
     "@cap-js/sqlite": "^2",
     "@sap/cds-dk": "^9",
     "cds-plugin-ui5": "^0.13.0",
-    "rimraf": "^5.0.5",
-    "mbt": "^1.2.29"
+    "mbt": "^1.2.29",
+    "rimraf": "^5.0.5"
   },
   "scripts": {
     "start": "cds-serve",
@@ -36,7 +36,10 @@
       },
       "[production]": {
         "auth": "xsuaa"
-      }
+      },
+      "html5-repo": true,
+      "destinations": true,
+      "workzone": true
     },
     "[development]": {
       "requires": {
